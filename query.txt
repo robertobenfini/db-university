@@ -2,4 +2,7 @@ SELECT *
 FROM `students` 
 WHERE `date_of_birth` 
 like '1990%';
-----------------------------------------------------------
+
+SELECT * 
+FROM `courses` 
+WHERE `cfu` > 10;
