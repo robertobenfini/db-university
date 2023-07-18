@@ -15,3 +15,7 @@ JOIN `teachers`
 ON `course_teacher`.`teacher_id` = `teachers`.`id`
 WHERE `teachers`.`id` = 44;
 
+SELECT `students`.`name` AS `Nome`, `students`.`surname` AS `Cognome`, `students`.`degree_id`, `degrees`.`name` AS `Nome_corso`,`degrees`.`level` AS `Livello` FROM `students` 
+JOIN `degrees` 
+ON `students`.`degree_id`=`degrees`.`id` 
+ORDER BY `students`.`name` ASC;
