@@ -6,3 +6,12 @@ GROUP BY `n_studenti`;
 SELECT COUNT(*) as `prof`, `office_address` as `ufficio` 
 FROM `teachers` 
 GROUP BY `ufficio`;
+
+SELECT AVG(`vote`) AS `media_voti`, `exam_id` AS `id_esame` 
+FROM `exam_student` 
+GROUP BY `id_esame`;
+
+SELECT COUNT(*) as `corso`, `department_id` as `dipartimento` 
+FROM `degrees` 
+GROUP BY `dipartimento`;
+
