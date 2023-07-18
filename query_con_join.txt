@@ -2,3 +2,8 @@ SELECT `students`.`name` as `nome_studente`, `students`.`surname` as `cognome_st
 FROM `students` 
 JOIN `degrees` ON `students`.`degree_id`=`degrees`.`id` 
 WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
+
+SELECT `degrees`.`name` as `nome_corso` 
+FROM `degrees` JOIN `departments` 
+ON `degrees`.`department_id`=`departments`.`id` 
+WHERE `departments`.`id` = 7;
