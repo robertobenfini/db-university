@@ -29,6 +29,7 @@ SELECT COUNT(`id`)
 AS 'total_departments' 
 FROM `departments`;
 
-SELECT `phone` 
+SELECT COUNT(*)
+AS `n_teachers` 
 FROM `teachers` 
 WHERE `phone` IS NULL;
