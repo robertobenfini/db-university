@@ -3,11 +3,11 @@ FROM `students`
 JOIN `degrees` ON `students`.`degree_id`=`degrees`.`id` 
 WHERE `degrees`.`name` LIKE 'Corso di Laurea in Economia';
 
-SELECT `degrees`.`name` AS `nome_corso`, `degrees`.`level` AS `tipo` 
+SELECT `degrees`.`*` 
 FROM `degrees` 
 JOIN `departments` 
 ON `degrees`.`department_id`=`departments`.`id` 
-WHERE `departments`.`id` = 7 AND `degrees`.`level` LIKE 'magistrale';
+WHERE `departments`.`name` = 'Dipartimento di Neuroscienze' AND `degrees`.`level` = 'magistrale';
 
 SELECT `course_teacher`.`course_id`, `course_teacher`.`teacher_id`, `teachers`.`name`, `teachers`.`surname` 
 FROM `course_teacher` 
